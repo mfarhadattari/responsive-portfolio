@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+.header {
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+/* header and navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.btn-primary {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    height: 64px;
+    border: 0;
+    border-radius: 5px;
+    background: #FD6E0A;
+    padding: 18px 35px;
+}
+
+/* banner styles    */
+.banner {
+    margin: 0 100px 0 200px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+.banner-subtitle {
+
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.banner-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* main section style */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 130px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #181818;
+}
+
+/* about section style */
+.about {
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+
+}
+
+.section-description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info-title {
+    font-size: 20px;
+    color: #757575
+}
+
+.about-info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+}
+
+/* My Skill Section */
+.my-skill {
+    text-align: center;
+
+}
+
+.my-skill-description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #757575;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.skill {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.skill-icon {
+    margin-top: 25px;
+}
+
+.skill-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #181818;
+    margin-top: 30px;
+
+}
+
+
+.skill-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    margin-top: 20px;
+}
+
+/* Resume Section Style */
+.resume{
+    padding: 10px;
+}
+.resume-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+
+}
+
+.resume-container-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #474747;
+}
+
+.resume-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.resume-item .title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.resume-item .sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.resume-item .description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+
+.resume-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Footer Section */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.contact .section-title {
+    text-align: left;
+}
+
+.contact-description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.contact  a{
+    margin-right: 30px;
+}
+
+.contact input[type="email"], input[type="text"],
+textarea {
+    margin-top: 24px;
+    border: 0;
+    width: 100%;
+    padding:18px 30px;
+}
+.contact input[type="email"]:hover,input[type="text"]:hover,
+textarea:hover{
+    border: 2px solid #FD6E0A;
+    border-radius: 10px;
+}
+input{
+    height: 60px;
+}
+
+
+@media screen and (max-width:577px) {
+    .skills-container ,
+    .resume-container,
+    .about-info-container,
+    .contact,
+    .banner,
+    nav,
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .about{
+        padding: 10px;
+    }
+    .contact input[type="email"], input[type="text"], textarea{
+        padding: 0px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0px;
+    }
+    .banner img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width: 769px) {
+
+    .skills-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skill{
+        text-align: center;
+        width: 45%;
+        padding: 5px;
+    }
+    .contact {
+        padding: 100px;
+    }
+    .contact input[type="email"], input[type="text"], textarea{
+        padding: 0px;
+    }
+
+}
